@@ -1,0 +1,67 @@
+/**
+ *  If you want to override some foundation settings, you have to change values here.
+ *  The list of settings values are listed here bower_components/foundation/scss/foundation/_settings.scss
+ */
+$topbar-background: #222;
+$foundation-palette: (
+    primary: #2199e8,
+    secondary: #777,
+    success: #85bf6b, // changed
+    warning: #ffae00,
+    alert: #ec5840,
+);
+$background-color: #222;
+$font-size: 1.125rem;
+$login-image: '../images/cure.png';
+//
+/**
+ *  The import of foundation is made manually because there is still no links of the
+ *  sass version in their bower.json...
+ */
+@import '../../bower_components/foundation-sites/scss/foundation';
+@include foundation-everything;
+
+/**
+ *  Do not remove the comments below. It's the markers used by wiredep to inject
+ *  sass dependencies when defined in the bower.json of your dependencies
+ */
+// bower:scss
+// endbower
+
+html
+{
+    background-color: $background-color;
+    font-style: 16px;
+}
+body
+{
+    font-size: $font-size;
+    color: #999;
+    line-height: 1.333;
+    background-color: $background-color; // override foundation : @todo: remove from scss
+    height: auto !important;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+footer
+{
+    padding-top: 2rem;
+}
+.browsehappy
+{
+    margin: 0.2em 0;
+    background: $background-color;
+    color: #000;
+    padding: 0.2em 0;
+}
+.content
+{
+    flex: 1 0;
+}
+/**
+ *  Do not remove the comments below. It's the markers used by gulp-inject to inject
+ *  all your sass files automatically
+ */
+// injector
+// endinjector

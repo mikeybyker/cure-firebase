@@ -1,0 +1,88 @@
+{
+    "artist":{
+        "The Cure": {
+            "discog":{
+                // Each album/release, keyed by albumId
+                "4827": {
+                        "title":"Three Imaginary Boys",
+                        "releaseDate":"08/05/1979",
+                        "releaseYear":"1979"
+                },
+                // ...Next album
+            },
+            "bio" : "English new wave/post-punk/gothic rock band founded in 1976 in Crawley, West Sussex. ",
+            "image" : "cure.png"
+        }
+    },
+    "ranks" : {
+        // Average rating keyed by trackId : Adding only when voted for
+        "4858" : 1,
+        "4859" : 2,
+        "4865" : 5,
+        "4877" : 5,
+        "4880" : 4,
+        "4885" : 2,
+        "4886" : 5,
+        // ...Next track
+    },
+
+    "releases":{
+        // Each album/release, keyed by albumId
+        "4972": {
+            "id":"4972",
+            "artist":"The Cure",
+            "artistFirstLetter":"C",
+            "title":"Disintegration",
+            "releaseDate":"02/05/1989",
+            "releaseYear":1989,
+            "label":"Fiction",
+            "tracks":12,
+            "index":299,
+            "clzAlbumid":427330,
+            "clzDiscid":"",
+            "freedbId":"",
+            "coverFront":"TheCureDisintegration1984972N2HY_f.jpg"
+        },
+        // ...Next album
+      },
+
+    "tracks":{
+        // Each album/release, keyed by albumId
+        // To allow easy retireval of all tracks in an album
+        "1506":{
+            // Then by trackId
+            "1499":{
+                "artist":"The Cure",
+                "artistFirstLetter":"C",
+                "albumArtist":"The Cure",
+                "albumTitle":"Mixed Up (5 Disc Box Set)",
+                "title":"Close To Me(Closer Mix)",
+                "position":1,
+                "releaseDate":"20/11/1990",
+                "length":"05:44",
+                "freedbId":"0f02d802",
+                "msId":"6058F",
+                "clzDiscid":"3739533",
+                "id":1499,
+                "index":1,
+                "albumId":1506,
+                "votes":0,
+                "total":0,
+                "timestamp":659059200
+            },
+            // ...Next track in this album
+        },
+        // ...Next album
+    },
+
+    "users" : {
+        // Each auth'd user (firebase ID, no identifying data)
+        "SOME_ID" : {
+            "ratings" : {
+                // User rating of each track, by trackId
+                "4877" : 5,
+            }
+        },
+        // ... Next user
+    }
+}

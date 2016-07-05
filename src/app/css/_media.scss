@@ -1,0 +1,37 @@
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+    .release:nth-of-type(2n){
+        border-right: none;        
+    }
+    // .release a{
+    //     color: red !important;
+    // }
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
+
+}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .release:nth-of-type(3n){
+        border-right: none;
+    }
+    // .release a{
+    //     color: blue !important;
+    // }
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+    .release:nth-of-type(4n){
+        border-right: none;
+    }
+    // .release a{
+    //     color: yellow !important;
+    // }
+}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}

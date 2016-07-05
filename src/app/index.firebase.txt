@@ -1,0 +1,14 @@
+(function() {
+    'use strict';
+
+    angular
+        .module('cure')
+        .constant('firebaseConfig',
+            {
+                apiKey: 'YOUR_API_KEY',
+                authDomain: 'YOUR_DOMAIN.firebaseapp.com',
+                databaseURL: 'https://YOUR.firebaseio.com',
+                storageBucket: 'YOUR_BUCKET_ID.appspot.com'
+            });
+
+})();

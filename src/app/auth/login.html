@@ -1,0 +1,24 @@
+<div class="container">
+
+    <div class="row">
+        <div class="large-12 text-center columns">
+            <div class="panel login-panel">
+                <div class="login-buttons" ng-if="!vm.user">
+                    <button class="secondary button" ng-click="vm.oauthLogin('google')">Google</button>
+                    <button class="secondary button" ng-click="vm.oauthLogin('facebook')">Facebook</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="small-8 small-offset-2 text-center columns">
+                <ul class="menu simple topthree">
+                    <li ng-repeat="track in vm.topTracks | orderBy:'-average'">
+                        <small>{{track.title}} ({{track.average}})</small>
+                    </li>
+                </ul>
+        </div>
+    </div>
+
+</div>

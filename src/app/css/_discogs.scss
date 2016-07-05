@@ -1,0 +1,75 @@
+.release
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 0 1rem;
+    padding: 1rem 0.5rem .5rem;
+    border-bottom: 1px dotted #666;
+    border-right: 1px dotted #666;
+    text-align: center;
+    a
+    {
+        display: flex;
+        min-height: 3rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+.tracks
+{
+    a
+    {
+        color: #999;
+        &:hover
+        {
+            color: #fff;
+        }
+    }
+}
+
+.release-title
+{
+    a
+    {
+        color: inherit;
+        line-height: inherit;
+    }
+}
+.cover
+{
+    box-shadow: 10px 10px 5px #000;
+    margin-bottom: 5px;
+}
+.panel-ratings
+{
+    h2
+    {
+        margin-bottom: 0;
+    }
+}
+.rate-buttons
+{
+    margin-top: 20px;
+    .button-group
+    {
+        margin-bottom: 0;
+    }
+}
+.rating
+{
+    unicode-bidi: bidi-override;
+    // display: inline-block;
+    cursor: default;
+}
+.rating > span
+{
+    display: inline-block;
+    position: relative;
+    width: 1.1em;
+}
+.rating > span.selected:before
+{
+   content: "\2605";
+   position: absolute;
+}
