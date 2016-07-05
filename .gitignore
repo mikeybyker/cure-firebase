@@ -7,4 +7,5 @@ coverage/
 dist/
 removed/
 app/index.firebase.js
+.firebaserc
 cleaner.bat
