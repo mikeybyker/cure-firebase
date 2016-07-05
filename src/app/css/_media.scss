@@ -1,16 +1,24 @@
 /* Small only */
 @media screen and (max-width: 39.9375em) {
     .release:nth-of-type(2n){
-        border-right: none;        
+        border-right: none;
     }
     // .release a{
     //     color: red !important;
     // }
+    .panel-column
+    {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 /* Medium and up */
 @media screen and (min-width: 40em) {
-
+    .panel-column
+    {
+        display: inline;
+    }
 }
 
 /* Medium only */
