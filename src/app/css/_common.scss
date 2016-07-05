@@ -1,0 +1,36 @@
+a
+{
+    color: white;
+    &:hover,
+    &:focus
+    {
+        color: map-get($foundation-palette, success);
+    }
+}
+h1
+{
+    font-size: 1.5em;
+    margin: 0;
+    line-height: 1.25em;
+}
+// override
+.top-bar .top-bar-left, .top-bar .top-bar-right
+{
+    width: auto;
+}
+.menu .active > a
+{
+    color: map-get($foundation-palette, success);
+    background: none;
+}
+.top-bar
+{
+    h1, a
+    {
+        color: #fff;
+    }
+}
+.panel
+{
+    margin-top: 50px;
+}

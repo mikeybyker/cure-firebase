@@ -1,0 +1,27 @@
+.login-image
+{
+   left: 0;
+   top: 0;
+}
+.login-buttons
+{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    .button
+    {
+        width: 100px;
+    }
+}
+.panel.login-panel
+{
+    position: relative;
+    background-image: url($login-image);
+    min-height: 500px;
+    background-size: cover;
+}
+.topthree
+{
+    min-height: 28px;
+}

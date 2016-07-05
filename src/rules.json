@@ -1,0 +1,16 @@
+/*
+Firebase rules:
+    Read/write requires auth,
+    except for reading ranks (to get top X tracks)
+*/
+{
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null",
+      "ranks": {
+        ".read": "true",
+        ".write": "auth != null",
+        ".indexOn": ["id", "average"]
+      }
+  }
+}

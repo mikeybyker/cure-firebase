@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row" ng-hide="!vm.release.artist">
+        <div class="small-12 text-center columns">
+            <a ng-href="#/discog">
+                <img src="images/the-cure.png" alt="The Cure">
+            </a>
+            <h1>{{vm.release.title}}</h1>
+            <small>{{vm.release.releaseDate}}</small>
+        </div>
+        <div class="small-12 medium-6 text-center columns">
+            <div class="panel">
+                <img class="cover" ng-src="images/covers/{{vm.release.coverFront}}">
+                <ul class="menu simple">
+                    <li><small>Label: {{vm.release.label}}</small></li>
+                    <li><small>Tracks: {{vm.release.tracks}}</small></li>
+                </ul>
+            </div>
+        </div>
+        <div class="small-12 medium-6 text-center columns">
+            <div class="panel text-left">
+                <ol class="">
+                    <li class="tracks" ng-repeat="track in vm.tracks">
+                        <a ng-href="#/discog/{{vm.releaseId}}/{{track.id}}">{{track.title}}</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>

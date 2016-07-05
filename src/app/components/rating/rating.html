@@ -1,0 +1,8 @@
+<div>
+    <div class="rating">
+        <span ng-class="{ 'selected': ($ctrl.total/$ctrl.votes) >= ($index + 0.5)}" ng-repeat="i in $ctrl.getRepeat($ctrl.max) track by $index">☆</span>
+    </div>
+    <div ng-if="$ctrl.showDetails">
+        <small>Votes Cast: {{$ctrl.votes}}</small> | <small>Rating: {{$ctrl.getAverage($ctrl.total, $ctrl.votes)}}</small>
+    </div>
+</div>
