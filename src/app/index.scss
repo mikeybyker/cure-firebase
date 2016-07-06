@@ -52,10 +52,14 @@ footer
 }
 .browsehappy
 {
-    margin: 0.2em 0;
+    margin: 0.2em;
     background: $background-color;
-    color: #000;
+    color: #fff;
     padding: 0.2em 0;
+    a
+    {
+        color: map-get($foundation-palette, success);
+    }
 }
 .content
 {
