@@ -9,3 +9,4 @@ removed/
 src/app/index.firebase.js
 .firebaserc
 cleaner.bat
+bfg.jar
