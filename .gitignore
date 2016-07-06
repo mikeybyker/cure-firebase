@@ -8,5 +8,9 @@ dist/
 removed/
 src/app/index.firebase.js
 .firebaserc
+<<<<<<< HEAD
 cleaner.bat
 bfg.jar
+=======
+cleaner.bat
+>>>>>>> bbf3dbb20e297c9ad4840c9be329d1c254607aa6
