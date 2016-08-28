@@ -1,7 +1,7 @@
 <div class="top-bar">
     <div class="top-bar-left">
-        <ul class="menu" ng-if="$ctrl.user">
-            <li ng-class="{ active: $ctrl.active('/') }">
+        <ul class="menu">
+            <li ng-class="{ active: $ctrl.active('/') || $ctrl.active('/discog') }">
                 <a ng-href="#/">Home</a>
             </li>
         </ul>
