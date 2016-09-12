@@ -24,9 +24,9 @@ gulp serve
 gulp build
 ```
 
-###### Add your [Firebase](https://firebase.google.com/) config to the firebaseConfig constant in app/index.firebase.txt and rename index.firebase.js
+###### Add your [Firebase](https://firebase.google.com/) config to index.html
 
 ### Version
-0.1.0
+0.5.0
 
 Mike
