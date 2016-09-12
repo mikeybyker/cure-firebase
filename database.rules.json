@@ -1,0 +1,18 @@
+{
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null",
+    "ranks": {
+        ".read": "true",
+        ".write": "auth != null",
+        // ".indexOn": "id" // doesn't work
+        // and fb keeps saying to index on average!
+        ".indexOn": ["id", "average"]
+    },
+    "users": {
+      "$uid": {
+        ".write": "$uid === auth.uid"
+      }
+    }
+  }
+}

@@ -2,6 +2,10 @@ language: node_js
 node_js:
   - '4.4'
 
+cache:
+  directories:
+    - node_modules
+
 before_script:
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
@@ -14,4 +18,5 @@ script:
   - gulp test
 
 after_success:
-  - firebase deploy --token $FIREBASE_TOKEN
+  - gulp build
+  - firebase deploy --project project-1936942649442708634 --token $FIREBASE_TOKEN
