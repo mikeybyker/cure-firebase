@@ -1,16 +1,21 @@
 /*
-Firebase rules:
-    Read/write requires auth,
-    except for reading ranks (to get top X tracks)
+    Firebase rules:
+    Read requires auth, except for reading ranks (to get top X tracks)
+    write only to users own data, plus to ranks
 */
 {
   "rules": {
     ".read": "auth != null",
     ".write": "auth != null",
-      "ranks": {
+    "ranks": {
         ".read": "true",
         ".write": "auth != null",
         ".indexOn": ["id", "average"]
+    },
+    "users": {
+      "$uid": {
+        ".write": "$uid === auth.uid"
       }
+    }
   }
 }
