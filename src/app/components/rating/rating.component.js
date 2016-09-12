@@ -23,4 +23,5 @@
         });
 
 })();
+
 // Note: component defaults to controllerAs: '$ctrl'

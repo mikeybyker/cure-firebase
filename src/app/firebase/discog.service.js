@@ -76,7 +76,7 @@
                     return $firebaseObject(trackRef);
                 },
 
-                // Get the album(or whatever) plus its tracks
+                // Get the album (or whatever) plus its tracks
                 getRelease : function(releaseId){
                     return $q.all([getAlbum(releaseId), getTracks(releaseId)]);
                 }

@@ -6,7 +6,8 @@
         .factory('FirebaseUtils', function($window){
 
             function firebaseRef(path) {
-                var ref = $window.firebase.database().ref(),
+                // var ref = $window.firebase.database().ref(),
+                var ref = firebase.database().ref(),
                     args = Array.prototype.slice.call(arguments);
                 if( args.length ) {
                     ref = ref.child(pathRef(args));
@@ -28,13 +29,13 @@
             return {
                 // There's only a global reference - seems odd for angularfire not to include service, but still.
                 firebase : function(){
-                    // return firebase.database().ref();
+                    return firebase.database().ref();
                     // Same as:
-                    return $window.firebase.database().ref();
+                    // return $window.firebase.database().ref();
                 },
-                // timestamp: firebase.database.ServerValue.TIMESTAMP,
+                timestamp: firebase.database.ServerValue.TIMESTAMP,
                 // Same as:
-                timestamp: $window.firebase.database.ServerValue.TIMESTAMP,
+                // timestamp: $window.firebase.database.ServerValue.TIMESTAMP,
                 
                 ref : firebaseRef
             }

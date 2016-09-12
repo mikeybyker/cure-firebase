@@ -35,7 +35,7 @@
         // Don't like... A child route would be better (ui-router) - or a ref in a service - rather
         // than making another request
         Discog.getCover($routeParams.id).then(function(image){
-            vm.cover =  image;
+            vm.cover = image;
         });
 
         function onVote(event){
@@ -51,7 +51,7 @@
         // To clean up angularfire references (stop permission errors...)
         $scope.$on('$destroy', function() {
             // vm.cover.$destroy(); // only need when using $firebaseObject : not when using .once
-            Vote.destroy();
+            Vote.destroy && Vote.destroy();
         });
 
     }

@@ -21,7 +21,7 @@ function listFiles() {
       path.join(conf.paths.src, '/app/**/*.module.js'),
       path.join(conf.paths.src, '/app/**/*.js'),
       path.join(conf.paths.src, '/**/*.spec.js'),
-      path.join(conf.paths.src, '/**/*.mock.js'),
+      // path.join(conf.paths.src, '/**/*.mock.js'),
     ])
     .concat(pathSrcHtml);
 
@@ -30,12 +30,12 @@ function listFiles() {
       pattern: pattern
     };
   });
-  files.push({
-    pattern: path.join(conf.paths.src, '/assets/**/*'),
-    included: false,
-    served: true,
-    watched: false
-  });
+  // files.push({
+  //   pattern: path.join(conf.paths.src, '/assets/**/*'),
+  //   included: false,
+  //   served: true,
+  //   watched: false
+  // });
   return files;
 }
 
@@ -69,7 +69,8 @@ module.exports = function(config) {
       'karma-phantomjs-shim',
       'karma-coverage',
       'karma-jasmine',
-      'karma-ng-html2js-preprocessor'
+      'karma-ng-html2js-preprocessor',
+      'karma-spec-reporter'
     ],
 
     coverageReporter: {

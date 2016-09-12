@@ -15,7 +15,6 @@
                 if(!providerName){
                     return;
                 }
-                $log.info('oauthLogin ', providerName);
                 Auth.$signInWithPopup(providerName)
                     .then(function(result) {
                         $location.path('/release');
@@ -35,7 +34,7 @@
 
             // To clean up angularfire references (stop permission errors...)
             $scope.$on('$destroy', function() {
-                vm.topTracks.$destroy();
+                vm.topTracks.$destroy && vm.topTracks.$destroy();
             });
 
         });

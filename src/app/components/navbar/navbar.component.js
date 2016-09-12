@@ -4,7 +4,7 @@
     angular
         .module('cure')
         .component('navbar', {
-            controller: function(Auth, $location, $log){
+            controller: function($location, $log, Auth){
 
                 var $ctrl = this; // to access from $onAuthStateChanged
                 this.user = null;

@@ -16,6 +16,12 @@
         toastrConfig.preventOpenDuplicates = true;  // true prevents the same toast as is currently showing
         toastrConfig.maxOpened = 1;
         toastrConfig.progressBar = true;
+
+        // Trying to stop unit-tests blowing up...
+        // Why did I put init in .run?
+        // Docs has in config : https://github.com/firebase/angularfire/blob/master/docs/reference.md#initialization
+        //  And anyway, this doesn't help :-|
+        // firebase.initializeApp(firebaseConfig);
     }
 
 })();
