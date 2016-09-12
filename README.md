@@ -32,6 +32,6 @@ gulp build
 ###### Add your [Firebase](https://firebase.google.com/) config to index.html
 
 ### Version
-0.5.0
+0.6.0
 
 Mike
