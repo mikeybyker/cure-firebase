@@ -6,7 +6,7 @@ An [Angular](https://www.angularjs.org/) 1.5 app with a [Firebase](https://fireb
 One day I might get round to adding my vinyl etc. too - though that would take a long, long time. I have lots :-)
 
 ### Continuous Integration
-This project follows a continuous integration process - from [Github](https://github.com/) to [Travis](https://travis-ci.org) to [Firebase](https://firebase.google.com) hosting. Each push to the repo runs unit-tests, and (assuming a pass) deploys to the live site.
+This project follows a continuous integration process - from [Github](https://github.com/) to [Travis](https://travis-ci.org) to [Firebase](https://firebase.google.com) hosting. Each push to the repo runs unit-tests and (assuming a pass) deploys to the live site.
 
 [View live](https://cure.firebaseapp.com/)
 
