@@ -8,8 +8,6 @@ One day I might get round to adding my vinyl etc. too - though that would take a
 ### Continuous Integration
 This project follows a continuous integration process - from [Github](https://github.com/) to [Travis](https://travis-ci.org) to [Firebase](https://firebase.google.com) hosting. Each push to the repo runs unit-tests and (assuming a pass) deploys to the live site.
 
-This is also the reason the 'dist' folder is in the repo...Usually it would not be of course. But for CI, that's the way it is.
-
 [View live](https://cure.firebaseapp.com/)
 
 ### Requirements
