@@ -6,6 +6,6 @@ coverage/
 .tmp/
 dist/
 removed/
-src/app/index.firebase.js
 .firebaserc
 cleaner.bat
+info.txt

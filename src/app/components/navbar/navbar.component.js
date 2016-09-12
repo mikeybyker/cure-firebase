@@ -26,13 +26,6 @@
                 // Equiv. of $window.firebase.onAuthStateChanged
                 Auth.$onAuthStateChanged(function(user) {
                     $ctrl.user = user;
-                    if (user) {
-                        // User is signed in.
-                        // $log.info('$onAuthStateChanged ::: user signed in');
-                    } else {
-                        // No user signed in.
-                        // $log.info('$onAuthStateChanged ::: user *not* signed in');
-                    }
                 });
             },
             templateUrl: 'app/components/navbar/navbar.html'

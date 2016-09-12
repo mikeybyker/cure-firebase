@@ -1,6 +1,16 @@
 (function() {
     'use strict';
 
+    // Firebase
+    var config = {
+        apiKey: 'KEY',
+        authDomain: 'cure.firebaseapp.com',
+        databaseURL: 'https://cure.firebaseio.com',
+        storageBucket: 'BUCKET.appspot.com'
+    };
+    firebase.initializeApp(config);
+    //
+    
     describe('controller DiscogController', function(){
         var vm,
             $rootScope,
