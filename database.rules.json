@@ -1,11 +1,35 @@
 {
   "rules": {
     ".read": "auth != null",
-    ".write": "auth != null",
+    ".write": "false",
     "ranks": {
         ".read": "true",
         ".write": "auth != null",
         ".indexOn": ["id", "average"]
+    },
+    "tracks": {
+      ".read": "true",
+      ".write": "auth != null"
+    },
+    "test" : {
+      ".read": "true",
+      ".write": "auth != null"
+    },
+    "playlists": {
+        ".read": "false",
+        "$id": {
+           // Let non existant be written, but once there, only owner
+          ".write": "!data.hasChild('owner') || data.child('owner').val() == auth.uid"
+        }
+    },
+    "artist":{
+       ".read": "true",
+       ".write": "false",
+       "$artist":{
+         "discog":{
+           ".indexOn": ["title", "format"]
+         }
+       }
     },
     "users": {
       "$uid": {
