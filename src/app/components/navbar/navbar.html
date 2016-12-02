@@ -1,20 +1,20 @@
 <div class="top-bar">
-    <div class="top-bar-left">
-        <ul class="menu">
-            <li ng-class="{ active: $ctrl.active('/') || $ctrl.active('/discog') }">
-                <a ng-href="#/">Home</a>
-            </li>
-        </ul>
-    </div>
+  <div class="top-bar-left">
+    <ul class="menu">
+      <li ng-class="{ active: $ctrl.active('/') || $ctrl.active('/discog') }">
+        <a ng-href="#/">Home</a>
+      </li>
+    </ul>
+  </div>
 
-    <div class="top-bar-right" ng-if="$ctrl.user">
-        <ul class="menu float-right">
-            <li ng-class="{ active: $ctrl.active('/about') }">
-                <a ng-href="#/about">About</a>
-            </li>
-            <li>
-                <button class="hollow button success" ng-click="$ctrl.signout()">Sign Out</button>
-            </li>
-        </ul>
-    </div>
+  <div class="top-bar-right" ng-if="$ctrl.user">
+    <ul class="menu float-right">
+      <li ng-class="{ active: $ctrl.active('/about') }">
+        <a ng-href="#/about">About</a>
+      </li>
+      <li>
+        <button class="hollow button success" ng-click="$ctrl.signout()">Sign Out</button>
+      </li>
+    </ul>
+  </div>
 </div>

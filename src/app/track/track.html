@@ -1,36 +1,36 @@
 <div class="container">
-    <div class="row" ng-hide="!vm.track.artist">
-        <div class="small-12 text-center columns">
-            <a ng-href="#/discog">
-                <img src="images/the-cure.png" alt="The Cure">
-            </a>
-            <h1 class="release-title">
-                <a ng-href="#/discog/{{vm.track.albumId}}">{{vm.track.albumTitle}}</a>
-            </h1>
-            <small>{{vm.track.releaseDate}}</small>
-        </div>
-
-        <div class="small-12 medium-6 text-center columns">
-            <div class="panel">
-                <img class="cover" ng-src="images/covers/{{vm.cover}}">
-            </div>
-        </div>
-
-        <div class="small-12 medium-6 panel-column columns">
-            <div class="panel panel-ratings">
-                <h2>{{vm.track.title}}</h2>
-
-                <rating-bar total="vm.track.total" votes="vm.track.votes" max="5" show-details="true"></rating-bar>
-
-                <ul class="menu simple">
-                    <li>Position: {{vm.track.position}}</li>
-                    <li>Length: {{vm.track.length}}</li>
-                </ul>
-
-                <voting-buttons on-vote="vm.onVote($event)" votes="vm.votes" max="5"></voting-buttons>
-
-            </div>
-        </div>
-
+  <div class="row" ng-hide="!vm.track.artist">
+    <div class="small-12 text-center columns">
+      <a ng-href="#/discog">
+        <img src="images/the-cure.png" alt="The Cure">
+      </a>
+      <h1 class="release-title">
+        <a ng-href="#/discog/{{vm.track.albumId}}">{{vm.track.albumTitle}}</a>
+      </h1>
+      <small>{{vm.track.releaseDate}}</small>
     </div>
+
+    <div class="small-12 medium-6 text-center columns">
+      <div class="panel">
+        <img class="cover" ng-src="images/covers/{{vm.cover}}">
+      </div>
+    </div>
+
+    <div class="small-12 medium-6 panel-column columns">
+      <div class="panel panel-ratings">
+        <h2>{{vm.track.title}}</h2>
+
+        <rating-bar total="vm.track.total" votes="vm.track.votes" max="5" show-details="true"></rating-bar>
+
+        <ul class="menu simple">
+          <li>Position: {{vm.track.position}}</li>
+          <li>Length: {{vm.track.length}}</li>
+        </ul>
+
+        <voting-buttons on-vote="vm.onVote($event)" votes="vm.votes" max="5"></voting-buttons>
+
+      </div>
+    </div>
+
+  </div>
 </div>

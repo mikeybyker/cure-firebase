@@ -1,26 +1,26 @@
-(function() {
-    'use strict';
+(function () {
+  'use strict';
 
-    angular
-        .module('cure')
-        .component('ratingBar', {
-            bindings:{
-                total: '<',
-                votes: '<',
-                max: '<',
-                showDetails: '<'
-            },
-            controller: function($log, Utils){
+  angular
+    .module('cure')
+    .component('ratingBar', {
+      bindings: {
+        total: '<',
+        votes: '<',
+        max: '<',
+        showDetails: '<'
+      },
+      controller: function ($log, Utils) {
 
-                this.getRepeat = Utils.getRepeat;
-                this.getAverage = Utils.getAverage;
+        this.getRepeat = Utils.getRepeat;
+        this.getAverage = Utils.getAverage;
 
-                // this.$onInit = function() {
-                //     $log.info('ratingBar component initialized');
-                // };
-            },
-            templateUrl: 'app/components/rating/rating.html'
-        });
+        // this.$onInit = function() {
+        //     $log.info('ratingBar component initialized');
+        // };
+      },
+      templateUrl: 'app/components/rating/rating.html'
+    });
 
 })();
 

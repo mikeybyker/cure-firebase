@@ -1,7 +1,8 @@
 <div class="rate-buttons">
-    <h4>Rate</h4>
-    <div class="button-group">
-        <button class="button" ng-class="{ 'alert': $ctrl.votes.$value === ($index + 1)}" ng-click="$ctrl.onVote({$event: {value: ($index + 1)}});" ng-repeat="i in $ctrl.getRepeat($ctrl.max) track by $index">{{$index + 1}}</button>
-    </div>
-    <small>Your Rating: {{$ctrl.votes.$value || 0}}</small>
+  <h4>Rate</h4>
+  <div class="button-group">
+    <button class="button" ng-class="{ 'alert': $ctrl.votes.$value === ($index + 1)}" ng-click="$ctrl.onVote({$event: {value: ($index + 1)}});"
+      ng-repeat="i in $ctrl.getRepeat($ctrl.max) track by $index">{{$index + 1}}</button>
+  </div>
+  <small>Your Rating: {{$ctrl.votes.$value || 0}}</small>
 </div>

@@ -1,10 +1,10 @@
-(function() {
-    'use strict';
+(function () {
+  'use strict';
 
-    angular
-        .module('cure')
-        .factory('Auth', function($firebaseAuth){
-            return $firebaseAuth();
-        });
+  angular
+    .module('cure')
+    .factory('Auth', function ($firebaseAuth) {
+      return $firebaseAuth();
+    });
 
 })();

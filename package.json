@@ -1,6 +1,6 @@
 {
   "name": "cure",
-  "version": "0.6.0",
+  "version": "0.6.5",
   "dependencies": {},
   "scripts": {
     "test": "gulp test"
@@ -11,9 +11,10 @@
     "angular",
     "angularjs",
     "firebase",
+    "angularfire",
     "the cure"
-  ],
-  "description": "A starter project for Angular + Firebase with AngularFire",
+  ],  
+  "description": "An Angular 1.5 app with a Firebase backend. View and rate albums/releases by The Cure.",
   "repository": {
     "type": "git",
     "url": "https://github.com/mikeybyker/cure-firebase.git"

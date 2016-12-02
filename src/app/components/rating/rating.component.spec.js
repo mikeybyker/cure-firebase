@@ -1,23 +1,23 @@
-(function() {
-    'use strict';
+(function () {
+  'use strict';
 
-    describe('component ratingBar', function() {
+  describe('component ratingBar', function () {
 
-        var el;
+    var el;
 
-        beforeEach(module('cure'));
-        beforeEach(inject(function($compile, $rootScope) {
+    beforeEach(module('cure'));
+    beforeEach(inject(function ($compile, $rootScope) {
 
-            el = angular.element('<rating-bar></rating-bar>');
+      el = angular.element('<rating-bar></rating-bar>');
 
-            $compile(el)($rootScope.$new());
-            $rootScope.$digest();
+      $compile(el)($rootScope.$new());
+      $rootScope.$digest();
 
-        }));
+    }));
 
-        it('should be compiled', function() {
-            expect(el.html()).not.toEqual(null);
-        });
-
+    it('should be compiled', function () {
+      expect(el.html()).not.toEqual(null);
     });
-}());
+
+  });
+} ());
