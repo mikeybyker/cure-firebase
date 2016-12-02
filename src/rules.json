@@ -8,11 +8,21 @@
       ".indexOn": [
         "id",
         "average"
-      ]
+      ],
+      "$id": {
+        // average must be a number between 0 and 5
+        ".validate": "newData.child('average').isNumber() && newData.child('average').val() >=0 && newData.child('average').val() <=5"
+      }
     },
     "tracks": {
       ".read": "true",
-      ".write": "auth != null"
+      ".write": "auth != null",
+      "$id": {
+        "$id": {
+          // total and votes must be numbers 0 or higher
+          ".validate": "newData.child('total').isNumber() && newData.child('total').val() >=0 && newData.child('votes').isNumber() && newData.child('votes').val() >=0"
+        }
+      }
     },
     "test": {
       ".read": "true",
