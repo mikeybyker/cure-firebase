@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row" ng-hide="!vm.release.artist">
     <div class="small-12 text-center columns">
-      <a ng-href="#/discog">
+      <a ng-href="discog">
         <img src="images/the-cure.png" alt="The Cure">
       </a>
       <h1>{{vm.release.title}}</h1>
@@ -20,7 +20,7 @@
       <div class="panel text-left">
         <ol class="">
           <li class="tracks" ng-repeat="track in vm.tracks">
-            <a ng-href="#/discog/{{vm.releaseId}}/{{track.id}}">{{track.title}}</a>
+            <a ng-href="discog/{{vm.releaseId}}/{{track.id}}">{{track.title}}</a>
           </li>
         </ol>
       </div>
